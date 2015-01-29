@@ -1,0 +1,18 @@
+%nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
+  .container
+    %p.navbar-text.navbar-right
+      -#%a.navbar-link(href="javascript:void(0)")退出
+
+.margin-top-150.col-md-12
+  %form.form-horizontal(role="form")
+    .form-group
+      %label.col-xs-2.control-label(for="inputEmail3") 账号
+      .col-xs-8
+        %input.form-control(type="text" id="account" placeholder="账号")
+    .form-group
+      %label.col-xs-2.control-label(for="inputEmail3") 密码
+      .col-xs-8
+        %input.form-control(type="password" id="password" placeholder="密码")
+    .form-group
+      .col-sm-offset-2.col-sm-10
+        %button.btn.btn-primary(type="button" onclick="sign_in()")Sign in
